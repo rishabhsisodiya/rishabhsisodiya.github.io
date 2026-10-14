@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rishabh Sisodiya | Resume</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --ink: #111827; --mid: #374151; --soft: #6B7280; --line: #D1D5DB; --accent: #1D4ED8; }
+  html { font-size: 12px; }
+  body { background: #e5e7eb; font-family: 'Inter', sans-serif; color: var(--ink); line-height: 1.36; }
+  .page { background: #fff; width: 210mm; min-height: 297mm; margin: 1.5rem auto; padding: 12mm 14mm; box-shadow: 0 4px 20px rgba(0,0,0,.1); }
+
+  header { text-align: center; margin-bottom: .7rem; }
+  h1 { font-size: 1.9rem; font-weight: 700; letter-spacing: -.01em; }
+  .role { font-size: .95rem; font-weight: 600; color: var(--accent); margin: .1rem 0 .3rem; }
+  .contact { font-size: .85rem; color: var(--mid); }
+  .contact span + span::before { content: "|"; margin: 0 .5rem; color: var(--line); }
+
+  h2 { font-size: .78rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--accent);
+       border-bottom: 1px solid var(--line); padding-bottom: .2rem; margin: .75rem 0 .4rem; }
+  p, li { font-size: .9rem; color: var(--mid); }
+
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+  .job-head strong { font-size: .98rem; color: var(--ink); }
+  .date { font-size: .82rem; color: var(--soft); white-space: nowrap; }
+  .job-sub { font-size: .86rem; font-style: italic; color: var(--soft); margin-bottom: .2rem; }
+  .job + .job { margin-top: .55rem; }
+  .sub-role { font-size: .8rem; font-weight: 700; color: var(--ink); margin: .35rem 0 .15rem; }
+  ul { padding-left: 1.1rem; }
+  li { margin-bottom: .05rem; }
+  .stack { font-size: .8rem; color: var(--soft); margin-top: .2rem; }
+
+  .skills { display: grid; grid-template-columns: 7.5rem 1fr; gap: .1rem .6rem; }
+  .skills dt { font-size: .88rem; font-weight: 600; color: var(--ink); }
+  .skills dd { font-size: .88rem; color: var(--mid); }
+
+  .row { display: flex; justify-content: space-between; gap: 1rem; font-size: .88rem; color: var(--mid); margin-bottom: .1rem; }
+  .row b { color: var(--ink); font-weight: 600; }
+  .row .date { font-size: .85rem; }
+
+  @media print {
+    body { background: #fff; }
+    .page { margin: 0; box-shadow: none; width: auto; min-height: 0; padding: 0; }
+    @page { size: A4; margin: 10mm 12mm; }
+    li, .row, .job-head, .sub-role { break-inside: avoid; }
+    h2, .job-head, .job-sub, .sub-role { break-after: avoid; }
+  }
+  @media screen and (max-width: 800px) {
+    .page { width: auto; min-height: 0; margin: 0; padding: 1.2rem 16px; }
+    .skills { grid-template-columns: 1fr; }
+    .job-head, .row { flex-direction: column; gap: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Rishabh Sisodiya</h1>
+    <p class="role">Full Stack Engineer</p>
+    <p class="contact">
+      <span>rishabh.sisodiya4@gmail.com</span><span>+91-7737612493</span><span>Jaipur, India</span><span>linkedin.com/in/rishabhsisodiya</span>
+    </p>
+  </header>
+
+  <h2>Professional Summary</h2>
+  <p>Full Stack Engineer with 8.5+ years across React.js, Node.js, and AWS, building web applications, backend services, data pipelines, and internal tooling end to end. Shipped production code on a global platform serving thousands of members, cut processing overhead by ~60% by modernizing legacy automations, owned a DynamoDB/Informix-to-Redshift pipeline feeding BI, and served as technical point of contact for a major enterprise client. Comfortable leading small teams: mentoring engineers and guiding day-to-day delivery.</p>
+
+  <h2>Core Skills</h2>
+  <dl class="skills">
+    <dt>Frontend</dt><dd>React.js, Next.js, JavaScript, TypeScript, Redux</dd>
+    <dt>Backend</dt><dd>Node.js, NestJS, Express.js, FastAPI, Spring Boot, REST APIs, Microservices</dd>
+    <dt>Cloud &amp; DevOps</dt><dd>AWS EC2, Lambda, ECS, Docker, CircleCI, Jenkins, Nginx</dd>
+    <dt>Databases</dt><dd>PostgreSQL, DynamoDB, MySQL, Redshift, Informix</dd>
+    <dt>Tools</dt><dd>Git, Jira, Looker / LookML, Zendesk, AppDynamics, ServiceNow</dd>
+  </dl>
+
+  <h2>Professional Experience</h2>
+
+  <div class="job">
+    <div class="job-head"><strong>Lead Engineer | Wipro Limited</strong><span class="date">Jul 2021 – Present</span></div>
+    <p class="job-sub">Client: Topcoder</p>
+
+    <p class="sub-role">Full Stack Engineering</p>
+    <ul>
+      <li>Shipped features and production fixes across Node.js services and the React frontend of the Topcoder community platform and internal tools, serving thousands of members globally, via code-reviewed PRs in Scrum sprints.</li>
+      <li>Legacy Google Apps Script automations needed manual steps; rebuilt them as production-grade Node.js services, cutting processing overhead by ~60%.</li>
+      <li>Technical point of contact for Topgear, one of the platform's largest clients: advised their engineers on API integration and automation design, and resolved their operational issues with data-fix scripts and interim workarounds.</li>
+      <li>Owned Java data loaders on EC2 moving data from DynamoDB and Informix into Redshift, the source of truth for Looker dashboards and downstream automation, covering monitoring, failure recovery, and reliability.</li>
+      <li>Built 5 Zendesk apps for the support team (bulk email with auto ticket creation for a payment-provider migration, bulk challenge extensions, auto-SPOC CC, dynamic links, requester-info panel), cutting repetitive agent work.</li>
+      <li>Built LookML models and Looker dashboards giving community, delivery, and support teams real-time visibility into SLAs and operational health.</li>
+      <li>Extended a NestJS reporting API to replace Looker as the reporting layer for those SLA and operational metrics, delivered in a week using Cursor AI.</li>
+      <li>Mentored a junior engineer through delegated automation work, design feedback, and pair programming; worked with contractors to isolate root causes of production issues.</li>
+    </ul>
+
+    <p class="sub-role">Production Support</p>
+    <ul>
+      <li>Own L1/L2 support and incident handling for business-critical apps: triage, root cause analysis, stakeholder updates, and post-mortems, patching faults directly from logs, APIs, and database state.</li>
+      <li>Maintained Marathon Match automation and set up EC2 scoring environments for competitions run for clients such as NASA.</li>
+    </ul>
+    <p class="stack">React.js · Next.js · Node.js · NestJS · Java · AWS EC2 · Lambda · ECS · DynamoDB · Informix · PostgreSQL · Redshift · Docker · CircleCI · Looker · Zendesk</p>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><strong>Senior Software Engineer | Capgemini India Pvt. Ltd.</strong><span class="date">Feb 2018 – Jun 2021</span></div>
+    <p class="job-sub">Client: Discover Financial Services</p>
+    <ul>
+      <li>Developed enterprise React.js + Redux applications for merchant onboarding, handling complex multi-step forms and approval flows.</li>
+      <li>Built Spring Boot REST services integrated with IBM MQ for reliable event-driven messaging across distributed financial systems.</li>
+      <li>Automated operational and monitoring processes, reducing manual reporting effort and speeding up incident response in a regulated environment (AppDynamics, ServiceNow).</li>
+    </ul>
+    <p class="stack">React.js · Redux · Spring Boot · Core Java · IBM MQ · REST APIs · Jenkins · AWS · AppDynamics · ServiceNow</p>
+  </div>
+
+  <h2>Open Source</h2>
+  <div class="row"><span><b>stop-guessing</b>: Claude Code plugin that has AI agents spec before building, then verify.</span><span class="date">github.com/rishabhsisodiya/stop-guessing</span></div>
+  <div class="row"><span><b>RIROTE VISION</b>: macOS AI video studio built on HyperFrames and its agent skills, with chat editing, timeline, and export. Runs on the user's signed-in Claude Code, no separate API key.</span><span class="date">github.com/rishabhsisodiya/rirote-vision</span></div>
+
+  <h2>Education</h2>
+  <div class="row"><span><b>B.Tech, ECE</b>, Amity University Rajasthan</span><span class="date">2017 · 8.31 CGPA</span></div>
+  <div class="row"><span><b>12th, CBSE</b>, Central Academy, Chittorgarh</span><span class="date">2013 · 89.60%</span></div>
+  <div class="row"><span><b>10th, CBSE</b>, Central Academy, Chittorgarh</span><span class="date">2011 · 7.8 CGPA</span></div>
+
+  <h2>Awards &amp; Certifications</h2>
+  <div class="row"><span>Wipro 5 Habit Winner – Trust &amp; Stewardship (2023) · Star of the Month – Wipro (2021)</span></div>
+  <div class="row"><span>Rising Star Award – Capgemini (2020) · Oracle Certified Associate Java Programmer (OCAJP8)</span></div>
+
+</div>
+</body>
+</html>
